@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -9,25 +9,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.App {
+* {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 0;
+  line-height: 1.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1505ff;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem auto 1rem auto;
+  max-width: 80rem;
+}
+
+.navbar .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar .logo {
+  width: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    -webkit-animation: App-logo-spin infinite 20s linear;
-            animation: App-logo-spin infinite 20s linear;
-  }
+.navbar .link {
+  padding-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section .profil {
+  max-width: 30rem;
+}
+
+.hero-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section .container .profile-img {
+  width: 15.276rem;
+  height: 15rem;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section .contact-logos {
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,39 +112,30 @@ code {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section .logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0;
 }
 
-@-webkit-keyframes App-logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.blog-section {
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.projects-section {
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=main.css.map */

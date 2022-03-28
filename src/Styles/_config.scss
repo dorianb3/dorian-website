@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  //   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  //   sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,42 +12,138 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.App {
-  text-align: center;
+* {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 0;
+  line-height: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bold {
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dark {
+  background-color: black;
   color: white;
+  border-radius: 3px;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+// ******************************** //
+$primary-color: #1505ff;
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+  box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 1rem auto;
+  max-width: 80rem;
+  .brand {
+    display: flex;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    width: 2rem;
+  }
+  .link {
+    padding-left: 1rem;
   }
 }
+// ******************************** //
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+  .profil {
+    max-width: 30rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    .profile-img {
+      width: 15.276rem;
+      height: 15rem;
+      box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .contact-logos {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+}
+
+// ******************************** //
+.blog-section {
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+}
+
+.projects-section {
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+}
+// ******************************** //
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
