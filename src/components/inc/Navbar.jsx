@@ -6,7 +6,7 @@ function Navbar() {
     return (
     <div className="navbar">
         <Link className='brand' to='/'>
-            <span className='dark bold'>DB</span>
+            <span className='bg-black box fw-bold txt-white'>DB</span>
         </Link>
 
         <div className="links">
