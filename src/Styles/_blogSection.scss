@@ -1,59 +1,47 @@
 .blog-section {
-  margin: 2rem auto 1rem auto;
+  margin: 2rem auto 2rem auto;
   padding: 1rem;
   max-width: 80rem;
   box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
 }
 
-.accordion {
-  margin: auto;
-  max-width: 60rem;
-  .accordion-item {
-    margin-bottom: 1rem;
-    .accordion-item-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .dot {
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 50%;
-        display: inline-block;
-      }
-      .title {
-        flex-grow: 1;
-        padding: 0 1rem 0 1rem;
-      }
-    }
-    .accordion-item-content {
-      margin-left: 1.5rem;
-      //   display: none;
-    }
-  }
+.dot {
+  width: 0.5rem;
+  min-width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 1.5rem 1rem 0 0;
 }
 
-// .article-line {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-grow: 10;
-//   align-items: center;
-//   // * {
-//   //   border: solid 1px;
-//   // }
-//   .article-title {
-//     flex-grow: 1;
-//     padding: 0 1rem 0 1rem;
-//   }
-// }
+.accordion_button {
+  border: none;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.title {
+  flex-grow: 1;
+}
 
-// .accordion:hover .accordion-item:hover .accordion-item-content,
-// .accordion .accordion-item--default .accordion-item-content {
-//   height: 5rem;
+.accordion {
+  max-width: 60rem;
+  margin: auto;
+}
+/* activate toggle */
+// .accordion-item.active .button {
+//     background-color: #105057;
 // }
+.abstract-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+}
+.abstract-wrapper.open {
+  height: auto;
+}
 
-// .accordion-item-content,
-// .accordion:hover .accordion-item-content {
-//   height: 0;
-//   overflow: hidden;
-//   transition: height 0.25s;
-// }
+.abstract {
+  margin-left: 1.5rem;
+}

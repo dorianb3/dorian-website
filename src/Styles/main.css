@@ -16,6 +16,10 @@ code {
   line-height: 1.5rem;
 }
 
+ul {
+  list-style: none;
+}
+
 .bg-lavender {
   background-color: #e8f0fe;
 }
@@ -111,6 +115,24 @@ a {
 
 a:hover {
   color: #1505ff;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 1.5rem 0 0 0;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .navbar {
@@ -220,49 +242,58 @@ a:hover {
 }
 
 .blog-section {
-  margin: 2rem auto 1rem auto;
+  margin: 2rem auto 2rem auto;
   padding: 1rem;
   max-width: 80rem;
   -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
           box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
 }
 
-.accordion {
-  margin: auto;
-  max-width: 60rem;
+.dot {
+  width: 0.5rem;
+  min-width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 1.5rem 1rem 0 0;
 }
 
-.accordion .accordion-item {
-  margin-bottom: 1rem;
-}
-
-.accordion .accordion-item .accordion-item-header {
+.accordion_button {
+  border: none;
+  background-color: white;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  cursor: pointer;
 }
 
-.accordion .accordion-item .accordion-item-header .dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.accordion .accordion-item .accordion-item-header .title {
+.title {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0 1rem 0 1rem;
 }
 
-.accordion .accordion-item .accordion-item-content {
+.accordion {
+  max-width: 60rem;
+  margin: auto;
+}
+
+/* activate toggle */
+.abstract-wrapper {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height ease 0.2s;
+  transition: height ease 0.2s;
+}
+
+.abstract-wrapper.open {
+  height: auto;
+}
+
+.abstract {
   margin-left: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

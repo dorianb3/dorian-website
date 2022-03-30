@@ -4,6 +4,7 @@ import linkedin from '../logo/linkedin-black.svg';
 import mail from '../logo/mail_black_24dp.svg';
 import medium from '../logo/medium.svg';
 
+import Accordion from '../inc/Accordion';
 
 function Home() {
   return (
@@ -55,56 +56,18 @@ function Home() {
         <div className='blog-section-header'>
           <h3>Latest Articles</h3>
         </div>
+        <Accordion />
 
-
-        <div className='accordion'>
-          <div className='accordion-item'>
-            <div className='accordion-item-header'>
-              <div className='dot bg-slateblue'></div>
-              <div className='title'>Introduction to ETF</div>
-              <div className='date fs-small'>March 3, 2022</div>
-            </div>
-            <div className='accordion-item-content bg-lavender box fs-small'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum neque quaerat vero labore pariatur libero cum aliquam quae! Rem similique molestias cum asperiores, nisi quos laboriosam necessitatibus dignissimos est ipsa.
-            </div>
-          </div>
-
-          <div className='accordion-item'>
-            <div className='accordion-item-header'>
-              <div className='dot bg-seagreen'></div>
-              <div className='title'>Understanding Parachain and Bridges</div>
-              <div className='date fs-small'>March 17, 2022</div>
-            </div>
-            <div className='accordion-item-content bg-honeydew box fs-small'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum neque quaerat vero labore pariatur libero cum aliquam quae! Rem similique molestias cum asperiores, nisi quos laboriosam necessitatibus dignissimos est ipsa.
-            </div>
-          </div>
-
-
-
-
-        </div>
       </div>
 
       <div className='projects-section'>
         <h3>Projects</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio repellendus, voluptatem expedita sapiente maiores saepe commodi magnam inventore id. Quis amet dolore iusto! Facere molestiae saepe nesciunt vitae labore!</p>
-        
-        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
+
         
         
         
@@ -117,3 +80,4 @@ function Home() {
 }
 
 export default Home
+
