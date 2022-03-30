@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-    <div className="navbar">
+    <div className="box hgroup-space-between">
         <Link className='brand' to='/'>
-            <span className='bg-black box fw-bold txt-white'>DB</span>
+            <span className='bg-black badge fw-bold txt-white'>DB</span>
         </Link>
 
-        <div className="links">
-            <Link className='link' to='/blog'>Blog</Link>
-            <Link className='link' to='/projects'>Projects</Link>
-            <Link className='link' to='/about'>About</Link>
+        <div>
+            <Link className='badge' to='/blog'>Blog</Link>
+            <Link className='badge' to='/projects'>Projects</Link>
+            <Link className='badge' to='/about'>About</Link>
         </div> 
 
     </div>
