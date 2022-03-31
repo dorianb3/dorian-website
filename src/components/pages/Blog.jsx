@@ -1,9 +1,14 @@
+import React from 'react'
+// import { Articles } from '../../articles';
 
 
-function Blog() {
-    return (
-      <div>Blog</div>
-    )
-  }
+
+function Blog(props) {
+
+  return (
+    <div>Blog</div>
+  )
+}
+
+export default Blog
   
-  export default Blog

@@ -11,7 +11,7 @@ function Home() {
     <div className='home'>
 
       <div className="hero-section box hgroup-space-arround">
-        <div style={{"max-width":"30rem"}}>
+        <div style={{"maxWidth":"30rem"}}>
           <h2>Dorian Bonnet</h2>
           <span className='bg-elegant badge'>Financial Engineer</span>
           <p>I'm a finance and tech enthousiat and my mission is to constantly learn and try to 
@@ -21,10 +21,10 @@ function Home() {
           dolorum itaque? Minima exercitationem voluptatibus debitis.</p>
           <p>Particularly, I'm interested in</p>
           <div className='hgroup'>
-            <span className='badge fs-small bg-finance'>Finance</span>
-            <span className='badge fs-small bg-economics'>Economics</span>
-            <span className='badge fs-small bg-blockchain'>Blockchain</span>
-            <span className='badge fs-small bg-datascience'>Data Science</span>
+            <span className='badge fs-s bg-finance'>Finance</span>
+            <span className='badge fs-s bg-economics'>Economics</span>
+            <span className='badge fs-s bg-blockchain'>Blockchain</span>
+            <span className='badge fs-s bg-datascience'>Data Science</span>
           </div>
           
         </div>

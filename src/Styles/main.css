@@ -12,6 +12,10 @@ code {
   font-weight: bold;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 .fs-xs {
   font-size: 0.8rem;
 }
@@ -244,5 +248,15 @@ a {
   padding: 0 1em 0 1em;
   border-left: solid 5px;
   border-radius: 5px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tableOfContents {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
