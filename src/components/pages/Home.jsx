@@ -4,7 +4,7 @@ import linkedin from '../logo/linkedin-black.svg';
 import mail from '../logo/mail_black_24dp.svg';
 import medium from '../logo/medium.svg';
 
-import Accordion from '../inc/Accordion';
+// import Accordion from '../inc/Accordion';
 
 function Home() {
   return (
@@ -50,23 +50,14 @@ function Home() {
         <div className='blog-section-header'>
           <h3>Latest Articles</h3>
         </div>
-        <Accordion />
+        {/* <Accordion /> */}
 
       </div>
 
-      <div className='box'>
+      {/* <div className='box'>
         <h3>Projects</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
-
-        
-        
-        
-
-      </div>
+      </div> */}
 
     </div>
 

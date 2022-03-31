@@ -77,6 +77,7 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -238,6 +239,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-size: 1rem;
 }
 
 .content {
@@ -250,13 +252,44 @@ a {
   border-radius: 5px;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.tableOfContents {
+  height: 100%;
+  width: 13rem;
+  max-width: 13rem;
+  position: fixed;
+  z-index: 1;
+  top: 8rem;
 }
 
-.tableOfContents {
-  position: relative;
+.article {
+  margin-left: 15rem;
+  margin-top: -1rem;
+}
+
+@media (max-width: 768px) {
+  .tableOfContents {
+    display: none;
+  }
+  .article {
+    margin-left: 0;
+  }
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li.active > a {
+  color: #4285f4;
+}
+
+li > a:hover {
+  text-shadow: 0px 0px 1px black;
+}
+
+h2,
+h3 {
+  font-size: 1.2rem;
+  scroll-margin-top: 16px;
 }
 /*# sourceMappingURL=main.css.map */

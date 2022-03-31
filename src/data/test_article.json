@@ -1,0 +1,21 @@
+{
+    "author": "dorian bonnet",
+    "date": "2022-03-01",
+    "title": "What really cost EFT",
+    "abstract": "Exchange-traded funds (ETFs) are a type of financial instrument whose unique advantages over mutual funds have caught the eye of many an investor. If you find the tasks of analyzing and picking stocks a little daunting, ETFs may be right for you.",
+    "keywords": [
+        "Finance", "ETF", "Market"
+    ],
+    "content": {
+        "Introduction": [
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!"
+        ],
+        "2. What Is an ETF?": [
+            "Think of an ETF as a mutual fund that trades like a stock. Just like a mutual fund, an ETF represents a basket of securities (such as stocks) that reflect an index such as the S&P 500 or the Barclays Capital U.S. Aggregate Bond Index.",
+            "An ETF, however, isn't a mutual fund; it trades just like any other company on a stock exchange. Unlike a mutual fund that has its net asset value (NAV) calculated at the end of each trading day, an ETF's price changes throughout the day, fluctuating with supply and demand. It is important to remember that while ETFs attempt to replicate the return on indexes, there is no guarantee that they will do so exactly. It is not uncommon to see a 1% or more difference between the actual index's year-end return and that of an ETF.",
+            "By owning an ETF, you get the diversification of a mutual fund plus the flexibility of a stock. Because ETFs trade like stocks, you can short sell them, buy them on margin and purchase as little as one share (if desired). Another advantage is that the expense ratios of most ETFs are lower than that of the average mutual fund. For example, the SPDR S&P 500 ETF (SPY) has a low 0.09% as an expense ratio, as of Feb. 3, 2019.1 When buying and selling ETFs, you pay your broker the same commission that you'd pay on any regular trade."
+        ]
+    }
+    
+}

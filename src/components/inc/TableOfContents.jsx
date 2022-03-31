@@ -99,7 +99,8 @@ const useIntersectionObserver = (setActiveId) => {
     };
 
     const observer = new IntersectionObserver(callback, {
-      rootMargin: '-32px 0px -60% 0px',
+      // rootMargin: '-32px 0px -60% 0px',
+      rootMargin: '-32px 0px -40% 0px',
     });
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
     headingElements.forEach((element) => observer.observe(element));

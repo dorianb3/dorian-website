@@ -20,7 +20,8 @@ class IntroductionToEtf extends Component {
     constructor() {
         super();
         this.color = "#4285f4";
-
+        const jsonData= require('../data/test_article.json');
+        console.log(jsonData);
         this.path = "/introduction-to-etf";  /* "/blog"; */
         this.title = "Introduction to ETF";
         this.author = "Dorian Bonnet";
@@ -31,14 +32,14 @@ class IntroductionToEtf extends Component {
         
         this.abstract = `Exchange-traded funds (ETFs) are a type of financial instrument whose unique advantages over mutual 
         funds have caught the eye of many an investor. If you find the tasks of analyzing and picking stocks a little daunting, 
-        ETFs may be right for you.`;
+        ETFs may be right for you.`
     };
 
     render() {
         return (
-            <div className='container'>
+            <div className='box container'>
                 <TableOfContents/>
-                <div className="">
+                <div className="article">
                     <div className="box article-header">
                         
                         <h1>{ this.title }</h1>
@@ -58,7 +59,7 @@ class IntroductionToEtf extends Component {
                     
                     {/* <img src={ this.img } className="post-img" alt="" title=""/> */}
 
-                    <div className="box body">
+                    <div className="body box">
                         <h2 id="introduction">Introduction</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa 
                             officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>

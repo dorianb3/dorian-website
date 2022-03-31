@@ -1,7 +1,39 @@
-.container {
-  display: flex;
+.tableOfContents {
+  height: 100%;
+  width: 13rem;
+  max-width: 13rem;
+  position: fixed;
+  z-index: 1;
+  top: 8rem;
+  //   left: 0;
 }
 
-.tableOfContents {
-  position: relative;
+.article {
+  margin-left: 15rem;
+  margin-top: -1rem;
+}
+
+@media (max-width: 768px) {
+  .tableOfContents {
+    display: none;
+  }
+  .article {
+    margin-left: 0;
+  }
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+li.active > a {
+  color: #4285f4;
+}
+
+li > a:hover {
+  text-shadow: $text-shadow;
+}
+h2,
+h3 {
+  font-size: 1.2rem;
+  scroll-margin-top: 16px;
 }
