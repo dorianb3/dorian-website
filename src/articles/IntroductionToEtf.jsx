@@ -1,6 +1,5 @@
 export const IntroductionToEtf = {
-    primary_color: "#e8f0fe",
-    secondary_color: "blue",
+    color: "#4285f4",
     title: "Introduction to ETF",
     date: "2022-03-22",
     abstract: 

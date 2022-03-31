@@ -12,8 +12,8 @@ function Home() {
 
       <div className="hero-section box hgroup-space-arround">
         <div style={{"max-width":"30rem"}}>
-          <h1>Dorian<span className='bg-black badge txt-white'>Bonnet</span></h1>
-          <h3>Financial Engineer</h3>
+          <h2>Dorian Bonnet</h2>
+          <span className='bg-elegant badge'>Financial Engineer</span>
           <p>I'm a finance and tech enthousiat and my mission is to constantly learn and try to 
           share the knowledge I gain. </p> 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id iure at, modi 
@@ -21,10 +21,10 @@ function Home() {
           dolorum itaque? Minima exercitationem voluptatibus debitis.</p>
           <p>Particularly, I'm interested in</p>
           <div className='hgroup'>
-            <span className='badge fs-small' style={{"background-color":"#1266F1"}}>Finance</span>
-            <span className='badge fs-small' style={{"background-color":"#F93154"}}>Economics</span>
-            <span className='badge fs-small' style={{"background-color":"#00B74A"}}>Blockchain</span>
-            <span className='badge fs-small' style={{"background-color":"#FFA900"}}>Data Science</span>
+            <span className='badge fs-small bg-finance'>Finance</span>
+            <span className='badge fs-small bg-economics'>Economics</span>
+            <span className='badge fs-small bg-blockchain'>Blockchain</span>
+            <span className='badge fs-small bg-datascience'>Data Science</span>
           </div>
           
         </div>
@@ -46,7 +46,7 @@ function Home() {
 
 
 
-      <div className='box'>
+      <div className='box' id='#blog'>
         <div className='blog-section-header'>
           <h3>Latest Articles</h3>
         </div>

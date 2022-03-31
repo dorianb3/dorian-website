@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7,6 +6,62 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fs-xs {
+  font-size: 0.8rem;
+}
+
+.fs-s {
+  font-size: 0.9rem;
+}
+
+.bg-elegant {
+  background-color: #2e2e2e;
+}
+
+.bg-elegant-dark {
+  background-color: #212121;
+}
+
+.bg-finance {
+  background-color: #4285f4;
+}
+
+.bg-finance-dark {
+  background-color: #0d47a1;
+}
+
+.bg-economics {
+  background-color: #ff4444;
+}
+
+.bg-economics-dark {
+  background-color: #cc0000;
+}
+
+.bg-blockchain {
+  background-color: #2bbbad;
+}
+
+.bg-blockchain-dark {
+  background-color: #00695c;
+}
+
+.bg-datascience {
+  background-color: #ffbb33;
+}
+
+.bg-datascience-dark {
+  background-color: #ff8800;
+}
+
+body {
+  margin: 0;
 }
 
 p {
@@ -26,37 +81,6 @@ a {
   color: black;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-}
-
-a:hover {
-  text-shadow: #5c67d2;
-}
-
-.fw-bold {
-  font-weight: bold;
-}
-
-.fs-small {
-  font-size: 0.8rem;
-}
-
-.arrow {
-  border: solid grey;
-  border-width: 0 3px 3px 0;
-  position: relative;
-  bottom: 1.5px;
-  display: inline-block;
-  padding: 3px;
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }
 
 .profile-img {
@@ -141,16 +165,48 @@ a:hover {
 }
 
 .badge {
-  border-radius: 3px;
   padding: 0.3em;
   margin: 0.3em;
   color: white;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
   width: 1.5rem;
   height: 1.5rem;
   margin: 0.5rem;
+}
+
+.nav-link {
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  border-bottom: solid 2px #2e2e2e;
+}
+
+.arrow {
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  position: relative;
+  bottom: 1.5px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow-link {
+  float: right;
 }
 
 .dot {
@@ -188,9 +244,5 @@ a:hover {
   padding: 0 1em 0 1em;
   border-left: solid 5px;
   border-radius: 5px;
-}
-
-.arrow-link {
-  float: right;
 }
 /*# sourceMappingURL=main.css.map */

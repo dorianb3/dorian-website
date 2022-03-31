@@ -23,7 +23,7 @@ function arrowRight(color) {
 }
 
 function AccordionItem({ article, active, onToggle }) {
-    const { primary_color, secondary_color, title, date, abstract } = article;
+    const { color, title, date, abstract } = article;
     const contentEl = useRef();
     let height = "0px";
     if (active) {
@@ -35,22 +35,22 @@ function AccordionItem({ article, active, onToggle }) {
         <button 
         className={`accordion-header hgroup-space-between`} 
         onClick={onToggle}>
-            <div className='dot' style={{"background-color":secondary_color}}></div>
+            <div className='dot' style={{"background-color":color}}></div>
             <h3>{title}</h3> 
-            <div className='fs-small' style={{"min-width":"5rem", "margin":"0rem 1rem 0 1rem"}}>{date}</div>
+            <div className='fs-xs' style={{"min-width":"5rem", "margin":"0rem 1rem 0 1rem"}}>{date}</div>
             <i class={`arrow ${active ? "up" : "down"}`}></i>
         </button>
         <div
           ref={contentEl}
-          className={"content"}
-          style={{ height: height, "border-color":secondary_color}}
+          className="content"
+          style={{ height: height, "border-color":color}}
         //   style={active ? { height: contentEl.current.scrollHeight, 
         //   "background-color": primary_color,
         //   "border-color":secondary_color
         //   } : { height: "0px" }}
           > 
-            <div>{abstract}</div>
-            <Link className="arrow-link" to='/about'>{arrowRight(secondary_color)}</Link>
+            <div className='fs-s'>{abstract}</div>
+            <Link className="arrow-link" to='/about'>{arrowRight(color)}</Link>
         </div>
       </li>
     );

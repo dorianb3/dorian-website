@@ -1,6 +1,5 @@
 export const UnderstandingParachainAndBridges = {
-    primary_color: "#e6f4ea",
-    secondary_color: "green",
+    color: "#2bbbad",
     title: "Understanding Parachain and Bridges",
     date: "2022-03-17",
     abstract: 
