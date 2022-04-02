@@ -4,7 +4,7 @@ import linkedin from '../logo/linkedin-black.svg';
 import mail from '../logo/mail_black_24dp.svg';
 import medium from '../logo/medium.svg';
 
-// import Accordion from '../inc/Accordion';
+import Accordion from '../inc/Accordion';
 
 function Home() {
   return (
@@ -50,7 +50,7 @@ function Home() {
         <div className='blog-section-header'>
           <h3>Latest Articles</h3>
         </div>
-        {/* <Accordion /> */}
+        <Accordion />
 
       </div>
 

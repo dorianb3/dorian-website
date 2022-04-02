@@ -1,12 +1,12 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Articles } from '../../articles';
+// import { Articles } from '../../articles';
 // import Blog from '../pages/Blog';
-
-
+import { Articles } from '../../data';
+import { titleToPath } from './Utils';
 
 function AccordionItem({ article, active, onToggle }) {
-  const article_ = new article();
+  // const article_ = new article();
   const contentEl = useRef();
   let height = "0px";
   if (active) {
@@ -18,18 +18,18 @@ function AccordionItem({ article, active, onToggle }) {
       <button 
       className={`accordion-header hgroup-space-between`} 
       onClick={onToggle}>
-          <div className='dot' style={{"backgroundColor":article_.color}}></div>
-          <h3>{article_.title}</h3> 
-          <div className='fs-xs' style={{"minWidth":"5rem", "margin":"0rem 1rem 0 1rem"}}>{article_.date}</div>
+          <div className='dot' style={{"backgroundColor":article["color"]}}></div>
+          <h3>{article["title"]}</h3> 
+          <div className='fs-xs' style={{"minWidth":"5rem", "margin":"0rem 1rem 0 1rem"}}>{article["date"]}</div>
           <i className={`arrow ${active ? "up" : "down"}`}></i>
       </button>
       <div
         ref={contentEl}
         className="content"
-        style={{ height: height, "borderColor":article_.color}}
+        style={{ height: height, "borderColor":article["color"]}}
         > 
-          <p className='fs-s'>{article_.abstract}</p>
-          <Link className="arrow-link" to={article_.path}>{arrowRight(article_.color)}</Link>
+          <p className='fs-s'>{article["abstract"]}</p>
+          <Link className="arrow-link" to={titleToPath(article["title"])}>{arrowRight(article["color"])}</Link>
       </div>
     </li>
   );

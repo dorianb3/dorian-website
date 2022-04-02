@@ -20,8 +20,8 @@ class IntroductionToEtf extends Component {
     constructor() {
         super();
         this.color = "#4285f4";
-        const jsonData= require('../data/test_article.json');
-        console.log(jsonData);
+        // const jsonData= require('../data/test_article.json');
+        
         this.path = "/introduction-to-etf";  /* "/blog"; */
         this.title = "Introduction to ETF";
         this.author = "Dorian Bonnet";

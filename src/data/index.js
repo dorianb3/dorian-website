@@ -1,5 +1,5 @@
-const jsonData= require('./test_article.json');
+const _0001 = require('./test_article.json');
 
-export const articles__ = [
-    jsonData
+export const Articles = [
+    _0001
 ]

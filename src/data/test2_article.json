@@ -1,0 +1,19 @@
+{
+    "body": [
+        {"div": {
+            "className": "body",
+            "content": [
+                {
+                    "div": {
+                        "className": "header",
+                        "content": [
+                            {"h1": "What really cost ETF"},
+                            {"p": "2022-02-17"},
+                            {"p": "Exchange-traded funds (ETFs) are a type of financial instrument whose unique advantages over mutual funds have caught the eye of many an investor. If you find the tasks of analyzing and picking stocks a little daunting, ETFs may be right for you."}
+                        ]
+                    }
+                }
+            ]
+        }}
+    ]
+}

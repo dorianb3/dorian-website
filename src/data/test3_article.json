@@ -1,0 +1,19 @@
+{
+    "body": [
+        {
+            "id": 1,
+            "component": "p",
+            "in": "bla bla bla bla bla bla"
+        },
+        {
+            "id": 2,
+            "component": "a",
+            "attribute": {
+                "className": "inline-link",
+                "href": "#here"
+            },
+            "in": "link here",
+            "parent": 1
+        }
+    ]
+}
