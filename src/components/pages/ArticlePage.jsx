@@ -20,7 +20,7 @@ function ArticlePage(props) {
                     </div>
                 </div>
 
-                <div className="box" id='article-content'>
+                <div className="box">
                     {Object.entries(article["content"]).map(([key, value], i) => {
                         return (
                             <div key={ key } >

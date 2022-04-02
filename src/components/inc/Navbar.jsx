@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-    <div className="box hgroup-space-between">
+    <div className="navbar box hgroup-space-between">
         <Link className='brand' to='/'>
             <span className='bg-elegant badge fw-bold txt-white'>DB</span>
         </Link>

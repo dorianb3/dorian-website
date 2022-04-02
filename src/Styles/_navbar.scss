@@ -1,6 +1,12 @@
-.nav-link {
-  margin-left: 1rem;
-  &:hover {
+.navbar {
+  a {
+    margin-left: 1rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+  }
+  .nav-link:hover {
     border-bottom: solid 2px $elegant-color;
   }
 }

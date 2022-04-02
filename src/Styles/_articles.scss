@@ -1,0 +1,19 @@
+.article {
+  margin: -1rem 0 -1rem 15rem;
+  a {
+    text-decoration: none;
+    color: grey;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  p {
+    text-indent: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    margin-left: 0;
+  }
+}

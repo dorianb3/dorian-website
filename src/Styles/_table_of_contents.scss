@@ -5,35 +5,23 @@
   position: fixed;
   z-index: 1;
   top: 8rem;
-  //   left: 0;
-}
-
-.article {
-  margin-left: 15rem;
-  margin-top: -1rem;
+  li {
+    margin-bottom: 0.5rem;
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    &.active > a {
+      color: #4285f4;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .tableOfContents {
     display: none;
   }
-  .article {
-    margin-left: 0;
-  }
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-li.active > a {
-  color: #4285f4;
-}
-
-li > a:hover {
-  text-shadow: $text-shadow;
-}
-h2,
-h3 {
-  font-size: 1.2rem;
-  scroll-margin-top: 16px;
 }
