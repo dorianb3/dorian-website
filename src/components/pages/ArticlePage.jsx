@@ -13,6 +13,11 @@ function ArticlePage(props) {
                     <h1>{ article["title"] }</h1>
                     <div className='date'>{ article["date"] }</div>
                     <p className='abstract'>{ article["abstract"] }</p>
+                    <div className='hgroup'>
+                        {article["keywords"].map((keyword, index) => {
+                            return <span key={index} className='badge fs-s bg-finance'>{keyword}</span>
+                        })}
+                    </div>
                 </div>
 
                 <div className="box" id='article-content'>
