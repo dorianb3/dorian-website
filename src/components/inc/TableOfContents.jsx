@@ -117,7 +117,7 @@ function TableOfContents() {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav className="tableOfContents">
+    <nav className="tableOfContents box">
       <Headings headings={ nestedHeadings } activeId={ activeId }/>
     </nav>
   )

@@ -5,22 +5,22 @@ import TableOfContents from '../inc/TableOfContents';
 function ArticlePage(props) {
     const article = props.article;
     return (
-        <div className='box'>
+        <div className='invisible_box'>
             <TableOfContents/>
             <div className="article">
 
-                <div className="box article-header">
+                <header className="box">
                     <h1>{ article["title"] }</h1>
                     <div className='date'>{ article["date"] }</div>
-                    <p className='abstract'>{ article["abstract"] }</p>
+                    <p>{ article["abstract"] }</p>
                     <div className='hgroup'>
                         {article["keywords"].map((keyword, index) => {
                             return <span key={index} className='badge fs-s bg-finance'>{keyword}</span>
                         })}
                     </div>
-                </div>
+                </header>
 
-                <div className="box">
+                <section className="box">
                     {Object.entries(article["content"]).map(([key, value], i) => {
                         return (
                             <div key={ key } >
@@ -30,7 +30,7 @@ function ArticlePage(props) {
                                 }) }
                             </div>
                         )})}
-                </div>
+                </section>
             </div>
         </div>
     )

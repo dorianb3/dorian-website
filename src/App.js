@@ -1,21 +1,15 @@
-
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// import { Home, Blog, Projects, About } from './Components';
-// import { Home, Navbar } from './Components';
-
-
 
 // includes
 import Navbar from './components/inc/Navbar';
-
+import Footer from './components/inc/Footer';
 
 // pages
 import Home from './components/pages/Home';
 import Blog from './components/pages/Blog';
 import About from './components/pages/About';
-// import { Articles } from './articles';
+
+// articles
 import { Articles } from './data';
 import ArticlePage from './components/pages/ArticlePage';
 import { titleToPath } from './components/inc/Utils';
@@ -34,6 +28,7 @@ function App() {
             <Route key={ key } path={ titleToPath(article["title"]) } element={ <ArticlePage article={article}/> } />
             )})}
       </Routes>
+      <Footer/>
     </Router>
     
 

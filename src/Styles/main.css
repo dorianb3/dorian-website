@@ -161,6 +161,11 @@ ul {
           box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
 }
 
+.invisible_box {
+  margin: 1rem auto 1rem auto;
+  max-width: 82rem;
+}
+
 .badge {
   padding: 0.3em;
   margin: 0.3em;
@@ -250,12 +255,11 @@ ul {
 }
 
 .tableOfContents {
-  height: 100%;
+  min-height: 78.8%;
   width: 13rem;
   max-width: 13rem;
   position: fixed;
-  z-index: 1;
-  top: 8rem;
+  margin: 0rem 0rem 0rem 0rem;
 }
 
 .tableOfContents li {
@@ -265,6 +269,9 @@ ul {
 .tableOfContents li a {
   text-decoration: none;
   color: black;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.9rem;
 }
 
 .tableOfContents li a:hover {
@@ -272,7 +279,7 @@ ul {
 }
 
 .tableOfContents li.active > a {
-  color: #4285f4;
+  background-color: lightgrey;
 }
 
 @media (max-width: 768px) {
@@ -282,7 +289,7 @@ ul {
 }
 
 .article {
-  margin: -1rem 0 -1rem 15rem;
+  margin: 0rem 0rem 0rem 16rem;
 }
 
 .article a {
@@ -296,6 +303,28 @@ ul {
 
 .article p {
   text-indent: 1.5rem;
+}
+
+.article header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article header p {
+  max-width: 30rem;
+  margin: 2rem auto 2rem auto;
+}
+
+.article section {
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 @media (max-width: 768px) {

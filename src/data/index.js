@@ -1,5 +1,7 @@
-const _0001 = require('./test_article.json');
+const test = require('./test_article.json');
+const what_is_solana = require('./b0001.json');
 
 export const Articles = [
-    _0001
+    test,
+    what_is_solana
 ]
