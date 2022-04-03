@@ -54,10 +54,7 @@ function Home() {
 
       </div>
 
-      {/* <div className='box'>
-        <h3>Projects</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad labore blanditiis, aliquam minima asperiores deleniti explicabo enim distinctio natus voluptate architecto cupiditate nostrum magni aperiam cum repudiandae omnis? Totam!</p>
-      </div> */}
+      
 
     </div>
 

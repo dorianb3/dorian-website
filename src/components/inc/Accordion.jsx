@@ -1,35 +1,34 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-// import { Articles } from '../../articles';
-// import Blog from '../pages/Blog';
+
 import { Articles } from '../../data';
-import { titleToPath } from './Utils';
+import { titleToPath, themeColor } from './Utils';
 
 function AccordionItem({ article, active, onToggle }) {
-  // const article_ = new article();
   const contentEl = useRef();
   let height = "0px";
   if (active) {
       height = contentEl.current.scrollHeight
   };
-  
   return (
     <li className={`accordion-item ${active ? "active" : ""}`}>
       <button 
       className={`accordion-header hgroup-space-between`} 
       onClick={onToggle}>
-          <div className='dot' style={{"backgroundColor":article["color"]}}></div>
+          <div className={'dot bg-' + article["topic"]}></div>
           <h3>{article["title"]}</h3> 
           <div className='fs-xs' style={{"minWidth":"5rem", "margin":"0rem 1rem 0 1rem"}}>{article["date"]}</div>
           <i className={`arrow ${active ? "up" : "down"}`}></i>
       </button>
       <div
         ref={contentEl}
-        className="content"
-        style={{ height: height, "borderColor":article["color"]}}
+        className={'content border-' + article["topic"]}
+        style={{ height: height}}
         > 
           <p className='fs-s'>{article["abstract"]}</p>
-          <Link className="arrow-link" to={titleToPath(article["title"])}>{arrowRight(article["color"])}</Link>
+          <Link className="arrow-link" to={titleToPath(article["title"])}>
+            {arrowRight(themeColor(article["topic"]))}
+          </Link>
       </div>
     </li>
   );
@@ -62,6 +61,7 @@ export default Accordion;
 
 
 
+  
 
 
 

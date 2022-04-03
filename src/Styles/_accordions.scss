@@ -29,4 +29,16 @@
   padding: 0 1em 0 1em;
   border-left: solid 5px;
   border-radius: 5px;
+  &.border-finance {
+    border-color: $finance-color;
+  }
+  &.border-blockchain {
+    border-color: $blockchain-color;
+  }
+  &.border-economics {
+    border-color: $economics-color;
+  }
+  &.border-datascience {
+    border-color: $datascience-color;
+  }
 }

@@ -2,8 +2,8 @@
     "author": "dorian bonnet",
     "date": "2022-03-22",
     "topic": "blockchain",
-    "title": "What is Solana",
-    "abstract": "Solana is the fastest blockchain in the world and the fastest growing ecosystem in crypto, with thousands of projects spanning DeFi, NFTs, Web3 and more.",
+    "title": "Blockchain Consensus Mechanism",
+    "abstract": "A consensus mechanism is a fault-tolerant mechanism that is used in computer and blockchain systems to achieve the necessary agreement on a single data value or a single state of the network among distributed processes or multi-agent systems, such as with cryptocurrencies. It is useful in record-keeping, among other things.",
     "keywords": [
         "Finance", "ETF", "Market"
     ],
@@ -23,6 +23,4 @@
             "<p>By owning an ETF, you get the diversification of a mutual fund plus the flexibility of a <span id=\"here\">stock</span>. Because ETFs trade like stocks, you can short sell them, buy them on margin and purchase as little as one share (if desired). Another advantage is that the expense ratios of most ETFs are lower than that of the average mutual fund. For example, the SPDR S&P 500 ETF (SPY) has a low 0.09% as an expense ratio, as of Feb. 3, 2019.1 When buying and selling ETFs, you pay your broker the same commission that you'd pay on any regular trade.</p>"
         ]
     }
-    
 }
-
