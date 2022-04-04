@@ -75,14 +75,7 @@ p {
   line-height: 1.5em;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.profile-img {
-  width: 15.276rem;
-  height: 15rem;
+.img {
   margin: 1rem;
   -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
           box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
@@ -167,7 +160,7 @@ ul {
 }
 
 .badge {
-  padding: 0.3em;
+  padding: 0.2em 0.3em 0.3em 0.3em;
   margin: 0.3em;
   color: white;
   -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
@@ -195,6 +188,10 @@ footer {
 
 footer * {
   padding: 1rem;
+}
+
+section {
+  margin: 2rem;
 }
 
 .navbar a {
@@ -243,6 +240,8 @@ footer * {
 .accordion {
   max-width: 60rem;
   margin: auto;
+  list-style: none;
+  padding: 0;
 }
 
 .accordion-header {
@@ -362,5 +361,41 @@ footer * {
   .article {
     margin-left: 0;
   }
+}
+
+.about {
+  font-size: 0.9rem;
+}
+
+.about header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about header div {
+  margin: 0 1rem 0rem 1rem;
+}
+
+.about ul {
+  list-style: none;
+  border-left: solid 5px;
+  border-radius: 5px;
+  border-color: lightgrey;
+  margin-left: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.about li {
+  color: grey;
+  margin-bottom: 0.25rem;
+  max-width: 60rem;
+}
+
+.about .company_name {
+  color: blue;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

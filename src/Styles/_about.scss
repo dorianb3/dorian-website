@@ -1,0 +1,27 @@
+.about {
+  font-size: 0.9rem;
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      margin: 0 1rem 0rem 1rem;
+    }
+  }
+  ul {
+    list-style: none;
+    border-left: solid 5px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  li {
+    color: grey;
+    margin-bottom: 0.25rem;
+    max-width: 60rem;
+  }
+  .company_name {
+    color: blue;
+    font-weight: bold;
+  }
+}

@@ -8,16 +8,10 @@ p {
   text-indent: 0;
   line-height: 1.5em;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
 
 // ******************************** //
 
-.profile-img {
-  width: 15.276rem;
-  height: 15rem;
+.img {
   margin: 1rem;
   box-shadow: $box-shadow;
 }
@@ -59,7 +53,7 @@ ul {
 }
 
 .badge {
-  padding: 0.3em;
+  padding: 0.2em 0.3em 0.3em 0.3em;
   margin: 0.3em;
   color: white;
   box-shadow: $box-shadow;
@@ -78,4 +72,8 @@ footer {
   * {
     padding: 1rem;
   }
+}
+
+section {
+  margin: 2rem;
 }

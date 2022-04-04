@@ -21,10 +21,10 @@ function Home() {
           dolorum itaque? Minima exercitationem voluptatibus debitis.</p>
           <p>Particularly, I'm interested in</p>
           <div className='hgroup'>
-            <span className='badge fs-s bg-finance'>Finance</span>
-            <span className='badge fs-s bg-economics'>Economics</span>
-            <span className='badge fs-s bg-blockchain'>Blockchain</span>
-            <span className='badge fs-s bg-datascience'>Data Science</span>
+            <span className='badge bg-finance'><small>Finance</small></span>
+            <span className='badge bg-economics'><small>Economics</small></span>
+            <span className='badge bg-blockchain'><small>Blockchain</small></span>
+            <span className='badge bg-datascience'><small>Data Science</small></span>
           </div>
           
         </div>
@@ -39,7 +39,7 @@ function Home() {
           <a href="https://github.com/dorianbonnet" target="_blank" rel="noopener noreferrer">
             <img src={medium} className="logo" alt="medium logo"/></a>
         </div>
-        <img src={ profileImg } className="profile-img" alt="Dorian Bonnet" title="Dorian Bonnet"/>
+        <img src={ profileImg } className="img" alt="Dorian Bonnet" title="Dorian Bonnet" style={{"width": "15.276rem","height": "15rem"}}/>
       </div>
 
       {/* ------------------------------------------- */}
