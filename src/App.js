@@ -16,7 +16,6 @@ import { titleToPath } from './components/inc/Utils';
 
 function App() {
   return (
-
     <Router>
     <Navbar/>
       <Routes>
@@ -25,13 +24,11 @@ function App() {
         <Route path='/about' exact element={ <About/> }/>
         {Articles.map((article, key) => {
           return (
-            <Route key={ key } path={ titleToPath(article["title"]) } element={ <ArticlePage article={article}/> } />
+            <Route key={key} path={titleToPath(article["title"])} element={<ArticlePage article={article}/>}/>
             )})}
       </Routes>
       <Footer/>
     </Router>
-    
-
   );
 }
 

@@ -23,6 +23,49 @@ function About() {
         </div>
         <div className="box about">
 
+        <section>
+            <h3>Projects</h3>
+
+            <article>
+              <header>
+                <div style={{"minWidth":"3rem"}}>2022</div>
+                <div><strong>Finance3</strong></div>
+                <div><small>(in progress...)</small></div>
+              </header>   
+              <ul>
+                <li>Finance3 is a dashboard for web3 financial activities</li>
+                <li><a href="#here">Link here</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <header>
+                <div style={{"minWidth":"3rem"}}>2021</div>
+                <div><strong>DerivatiX</strong></div>
+                <div><small>(in progress...)</small></div>
+              </header>   
+              <ul>
+                <li>DerivatiX is a Python Package to price, analysis and create investment strategies based on derivative instruments</li>
+                <li><a href="#here">Link here</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <header>
+                <div style={{"minWidth":"3rem"}}>2020</div>
+                <div><strong>Quantitative Investment Solution (QIS Factory)</strong></div>
+                <div><small>(in progress...)</small></div>
+              </header>   
+              <ul>
+                <li>QIS Factory is a Python Package providing a framework to create, analysis and monitor investment strategies</li>
+                <li><a href="#here">Link here</a></li>
+              </ul>
+            </article>
+
+
+
+          </section>
+          
           <section>
             <h3>Experiences</h3>
             <article>
@@ -32,7 +75,7 @@ function About() {
                 <div className="company_name">Candriam</div> 
               </header>   
               <ul>
-                <li>Developing Python package providing a backtesting framework,</li>
+                <li>Development of a Python package providing a backtesting framework,</li>
                 <li>Creation of tools to analyse investment strategy,</li>
                 <li>Development of investment strategies (stocks, options and futures),</li>
                 <li>Study of alternative data for investment purposes (textual data).</li>
@@ -51,7 +94,7 @@ function About() {
                 <li>Update of the dashboards and take part in the preparation of the management committees,</li>
                 <li>Control and validation of net asset values of UCIs,</li>
                 <li>Checking the consistency of position and security transaction data,</li>
-                <li>Development of data analysis and backtest tools.</li>
+                <li>Development of data analysis and backtesting tools.</li>
               </ul>
             </article>
             
@@ -97,9 +140,9 @@ function About() {
             </article>
           </section>
 
-          <section>
+          {/* <section>
             <h3>Skills</h3>
-          </section>
+          </section> */}
 
           <section>
             <h3>Miscellaneous</h3>

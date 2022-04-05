@@ -77,3 +77,17 @@ footer {
 section {
   margin: 2rem;
 }
+
+.cards {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .card {
+    width: 25rem;
+    height: 10rem;
+    padding: 1rem;
+    // margin: 1rem;
+    box-shadow: $box-shadow;
+  }
+}

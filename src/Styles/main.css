@@ -33,7 +33,7 @@ p {
 }
 
 .bg-finance {
-  background-color: #4285f4;
+  background-color: #e8f0fe;
 }
 
 .bg-finance-dark {
@@ -41,7 +41,7 @@ p {
 }
 
 .bg-economics {
-  background-color: #ff4444;
+  background-color: #fce8e6;
 }
 
 .bg-economics-dark {
@@ -49,7 +49,7 @@ p {
 }
 
 .bg-blockchain {
-  background-color: #2bbbad;
+  background-color: #e6f4ea;
 }
 
 .bg-blockchain-dark {
@@ -57,7 +57,7 @@ p {
 }
 
 .bg-datascience {
-  background-color: #ffbb33;
+  background-color: #fef7e0;
 }
 
 .bg-datascience-dark {
@@ -194,6 +194,26 @@ section {
   margin: 2rem;
 }
 
+.cards {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards .card {
+  width: 25rem;
+  height: 10rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+}
+
 .navbar a {
   list-style: none;
   text-decoration: none;
@@ -270,19 +290,19 @@ section {
 }
 
 .content.border-finance {
-  border-color: #4285f4;
+  border-color: #e8f0fe;
 }
 
 .content.border-blockchain {
-  border-color: #2bbbad;
+  border-color: #e6f4ea;
 }
 
 .content.border-economics {
-  border-color: #ff4444;
+  border-color: #fce8e6;
 }
 
 .content.border-datascience {
-  border-color: #ffbb33;
+  border-color: #fef7e0;
 }
 
 .tableOfContents {
