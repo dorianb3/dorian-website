@@ -13,10 +13,11 @@ function Home() {
       <div className="hero-section box hgroup-space-arround">
         <div style={{"maxWidth":"30rem"}}>
           <h2>Dorian Bonnet</h2>
-          <span className='bg-elegant badge'>Financial Engineer</span>
-          <p>I'm a finance and tech enthousiat and my mission is to constantly learn and try to 
+          <span className='bg-elegant badge' style={{"margin":"0rem"}}>Financial Engineer</span>
+          
+          <p style={{"marginTop":"3rem"}}>I'm a finance and tech enthousiat and my mission is to constantly learn and try to 
           share the knowledge I gain. </p> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id iure at, modi 
+          <p style={{"marginBottom":"3rem"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id iure at, modi 
           delectus officia, sed exercitationem laborum doloremque vel labore, velit cupiditate dolorem 
           dolorum itaque? Minima exercitationem voluptatibus debitis.</p>
           {/* <p>Particularly, I'm interested in</p>
