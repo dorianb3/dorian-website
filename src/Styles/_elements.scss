@@ -10,6 +10,29 @@ p {
   line-height: 1.5em;
 }
 
+.link_container {
+  width: fit-content;
+}
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h2 {
+  margin-left: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
 // ******************************** //
 
 .img {
@@ -79,16 +102,16 @@ section {
   margin: 2rem;
 }
 
-.cards {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  .card {
-    width: 25rem;
-    height: 10rem;
-    padding: 1rem;
-    // margin: 1rem;
-    box-shadow: $box-shadow;
-  }
-}
+// .cards {
+//   max-width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   .card {
+//     width: 25rem;
+//     height: 10rem;
+//     padding: 1rem;
+//     // margin: 1rem;
+//     box-shadow: $box-shadow;
+//   }
+// }

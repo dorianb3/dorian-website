@@ -10,11 +10,13 @@
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+  transition: transform 0.2s;
 }
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  transition: transform 0.2s;
 }
-.arrow-link {
-  float: right;
-}
+// .arrow-link {
+//   float: right;
+// }

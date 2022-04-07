@@ -1,0 +1,41 @@
+.dot {
+  width: 0.5rem;
+  min-width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0rem 1rem 0 0;
+  background-color: lightgrey;
+}
+
+.accordion {
+  max-width: 60rem;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background-color: beige;
+    box-shadow: $box-shadow;
+    h3 {
+      flex-grow: 1;
+      font-size: 1rem;
+    }
+  }
+}
+
+.content {
+  overflow: hidden;
+  transition: height ease 0.2s;
+  margin-left: 0.5rem;
+  padding: 0 1em 0 1em;
+  border-left: solid 5px;
+  border-radius: 5px;
+  border-color: lightgrey;
+}

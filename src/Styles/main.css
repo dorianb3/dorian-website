@@ -78,6 +78,33 @@ p {
   line-height: 1.5em;
 }
 
+.link_container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h2 {
+  margin-left: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
 .img {
   margin: 1rem;
   -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
@@ -197,38 +224,6 @@ section {
   margin: 2rem;
 }
 
-.cards {
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.cards .card {
-  width: 25rem;
-  height: 10rem;
-  padding: 1rem;
-  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-}
-
-.navbar a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-}
-
-.navbar .nav-link:hover {
-  border-bottom: solid 2px #2e2e2e;
-}
-
 .arrow {
   border: solid grey;
   border-width: 0 3px 3px 0;
@@ -241,71 +236,19 @@ section {
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}
-
-.arrow-link {
-  float: right;
-}
-
-.dot {
-  width: 0.5rem;
-  min-width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  margin: 0rem 1rem 0 0;
-}
-
-.accordion {
-  max-width: 60rem;
-  margin: auto;
-  list-style: none;
-  padding: 0;
-}
-
-.accordion-header {
-  border: none;
-  background-color: white;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-}
-
-.accordion-header h3 {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-size: 1rem;
-}
-
-.content {
-  overflow: hidden;
-  -webkit-transition: height ease 0.2s;
-  transition: height ease 0.2s;
-  margin-left: 0.5rem;
-  padding: 0 1em 0 1em;
-  border-left: solid 5px;
-  border-radius: 5px;
-}
-
-.content.border-finance {
-  border-color: #e8f0fe;
-}
-
-.content.border-blockchain {
-  border-color: #e6f4ea;
-}
-
-.content.border-economics {
-  border-color: #fce8e6;
-}
-
-.content.border-datascience {
-  border-color: #fef7e0;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .tableOfContents {
@@ -420,5 +363,54 @@ section {
 .about .company_name {
   color: blue;
   font-weight: bold;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards .card {
+  margin: 1rem;
+  padding: 1rem 0 1rem 0;
+  width: 15rem;
+  border-bottom: solid 1px grey;
+  position: relative;
+}
+
+.cards .card .topic {
+  font-size: small;
+}
+
+.cards .card h3 {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.cards .card .date {
+  position: absolute;
+  bottom: 0.5rem;
+  font-size: small;
+}
+
+.projects-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-cards .card {
+  width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=main.css.map */
