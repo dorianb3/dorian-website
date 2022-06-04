@@ -10,7 +10,6 @@ const useHeadingsData = () => {
     const newNestedHeadings = getNestedHeadings(headingElements);
     setNestedHeadings(newNestedHeadings);
   }, []);
-
   return { nestedHeadings };
 };
 
