@@ -10,6 +10,8 @@ jobs:
     strategy:
       matrix:
         node-version: [15.x]
-  steps:
-    - run: npm install
-    - run: npm build
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm install
+      - run: npm build
+      # - run: npm test
