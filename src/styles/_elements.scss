@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 0;
+  line-height: 1.5em;
+}
+
+.link_container {
+  width: fit-content;
+}
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h2 {
+  margin-left: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+// ******************************** //
+
+.img {
+  margin: 1rem;
+  box-shadow: $box-shadow;
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.hgroup {
+  @include flex;
+}
+
+.hgroup-space-arround {
+  @include flex;
+  justify-content: space-around;
+}
+.hgroup-space-between {
+  @include flex;
+  justify-content: space-between;
+}
+
+.vgroup {
+  @include flex;
+  flex-direction: column;
+}
+
+.box {
+  margin: 1rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  box-shadow: $box-shadow;
+}
+.invisible_box {
+  margin: 1rem auto 1rem auto;
+  max-width: 82rem;
+}
+
+.badge {
+  padding: 0.2em 0.3em 0.3em 0.3em;
+  margin: 0.3em;
+  color: white;
+  box-shadow: $box-shadow;
+}
+
+.logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  * {
+    padding: 1rem;
+  }
+}
+
+section {
+  margin: 2rem;
+}
+
+// .cards {
+//   max-width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   .card {
+//     width: 25rem;
+//     height: 10rem;
+//     padding: 1rem;
+//     // margin: 1rem;
+//     box-shadow: $box-shadow;
+//   }
+// }
