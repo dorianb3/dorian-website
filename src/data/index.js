@@ -8,6 +8,6 @@ const pyhton_packages = require('./p0001.json');
 export const Articles = [
     test,
     pyhton_packages,
-    what_is_solana,
+    // what_is_solana,
     blockchain_consensus_mechanism
 ]
