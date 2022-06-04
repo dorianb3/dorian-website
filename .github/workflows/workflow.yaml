@@ -3,7 +3,7 @@ name: React CI1
 on:
   push:
     branches:
-      - "master"
+      - "main"
 jobs:
   build:
     runs-on: ubuntu-latest
