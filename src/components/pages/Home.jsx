@@ -16,7 +16,7 @@ function Home() {
 
       <div className="box hgroup-space-arround">
         <div style={{"maxWidth":"30rem"}}>
-          <h1>Dorian Bonnet AAAA</h1>
+          <h1>Dorian Bonnet</h1>
           <span className='bg-elegant badge' style={{"margin":"0rem", "fontWeight":"700"}}>Financial Engineer</span>
           
           <p style={{"marginTop":"3rem"}}>I'm a finance and tech enthousiat and my mission is to constantly learn and try to 
