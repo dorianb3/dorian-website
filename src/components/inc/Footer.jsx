@@ -7,7 +7,7 @@ import medium from '../logo/medium.svg';
 function Footer() {
   return (
     <footer className='box'>
-        <div className='hgroup'>
+        <div>
           <a href="mailto: dorianbonet3@gmail.com">
             <img src={mail} className="logo" alt="mail logo"/></a>
           <a href="https://www.linkedin.com/in/dorian-bonnet" target="_blank" rel="noopener noreferrer">
@@ -18,7 +18,6 @@ function Footer() {
             <img src={medium} className="logo" alt="medium logo"/></a>
         </div>
         <div className='fs-s'>&#169; Dorian Bonnet</div>
-
     </footer>
   )
 }
