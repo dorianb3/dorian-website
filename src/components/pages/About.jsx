@@ -1,4 +1,4 @@
-
+import React from 'react';
 import python_fournaise from "../img/python-de-la-forunaise.jpg";
 
 function About() {
