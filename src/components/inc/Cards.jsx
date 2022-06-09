@@ -23,16 +23,17 @@ export function ArticlesCards() {
         )}
 
 // ****************************************************************************
-export function ProjectsCards() {
-    return (
-        <div className='cards'>
-            <div className='card' style={{"width":"30rem"}} >
-                <div className='title'>Quantitative Investment Framework</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
-            </div>
-            <div className='card' style={{"width":"30rem"}}>
-                <div className='title'>Asset Pricing</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
-            </div>
-        </div>
-        )}
+// export function ProjectsCards() {
+//     return (
+//         <div className='cards'>
+//             <div className='card' style={{"width":"30rem"}} >
+//                 <div className='title'>Quantitative Investment Framework</div>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
+//             </div>
+//             <div className='card' style={{"width":"30rem"}}>
+//                 <div className='title'>Asset Pricing</div>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
+//             </div>
+//         </div>
+//         )}
+

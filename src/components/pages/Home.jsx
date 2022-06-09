@@ -1,14 +1,15 @@
 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import profileImg from '../img/profilphoto2.jpeg';
 import github from '../logo/github.svg';
 import linkedin from '../logo/linkedin-black.svg';
 import mail from '../logo/mail_black_24dp.svg';
 import medium from '../logo/medium.svg';
+import arrow_right from '../icons/arrow_right.svg';
 
 // import Accordion from '../inc/Accordion';
-import { ArticlesCards, ProjectsCards } from '../inc/Cards';
+import { ArticlesCards } from '../inc/Cards';
 
 function Home() {
   return (
@@ -40,13 +41,34 @@ function Home() {
       {/* ------------------------------------------- */}
 
       <section>
-        <h2>Articles</h2>
+        <div className='header'>
+          <h2>Lastest Articles</h2>
+          <Link to="/blog">
+            <img className='icon' src={arrow_right} alt="arrow right"/>
+          </Link>
+        </div>
         <ArticlesCards/>
       </section>
 
       <section>
         <h2>Projects</h2>
-        <ProjectsCards/>
+        <div className='project'>
+            <h3>Quantitative Investment</h3>
+            <div className="wrapper">
+              <div>version</div>
+              <div>codecov</div>
+              <div>download</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alir nihil consequuntur ut, excepturi tenetur quam nisi consectetur corporis, ratione qui molestiae? Aut repudiandae recusandae commodi laudantium!</p>
+        </div>
+        <div className='project'>
+            <h3>Asset Pricing</h3>
+            <div className="wrapper">
+              <div>badge1</div>
+              <div>badge2</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias maiores libero laborum aspernatur nihil consequuntur ut, excepturi tenetur quam nisi consectetur corporis, ratione qui molestiae? Aut repudiandae recusandae commodi laudantium!</p>
+        </div>
       </section>
 
     </main>
