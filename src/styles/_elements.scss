@@ -1,17 +1,18 @@
+
+$background-color1: #262629;
+$color1: #0080FF;
+
+
+// $box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+// $box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;
+$box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 body {
   margin: 0;
   justify-content: center;
 }
-
-p {
-  text-align: justify;
-  text-justify: inter-word;
-  text-indent: 0;
-  line-height: 1.5em;
-}
-
-.link_container {
-  width: fit-content;
+main {
+  padding-top: 100px;
 }
 a {
   text-decoration: none;
@@ -21,24 +22,62 @@ a {
   }
 }
 
-h1, h2 {
-  font-weight: 900;
+section {
+  max-width: 80rem;
+  margin: 2rem auto 2rem auto;
+  padding: 2rem 1rem 2rem 1rem; 
+  border-bottom: 1px solid lightgrey;
 }
+
+h1 {
+  color: $color1;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 0;
+  line-height: 1.5em;
+}
+
 
 h2 {
   margin-left: 1rem;
 }
 
-h3 {
-  font-weight: 700;
-}
-
-// ******************************** //
-
 .img {
   margin: 1rem;
   box-shadow: $box-shadow;
 }
+// *************************************
+
+
+
+.brand {
+
+  // font-weight: bold;
+  // padding: 0.2em 0.3em 0.2em 0.3em;
+  &:hover {
+    text-decoration: none;
+  }
+}
+// *************************************
+.box {
+  margin: 1rem auto 1rem auto;
+  padding: 1rem;
+  max-width: 80rem;
+  box-shadow: $box-shadow;
+}
+
+.invisible_box {
+  margin: 1rem auto 1rem auto;
+  max-width: 82rem;
+}
+// *************************
+// section {
+//   margin: 2rem;
+// }
+
 
 @mixin flex {
   display: flex;
@@ -65,23 +104,15 @@ h3 {
   flex-direction: column;
 }
 
-.box {
-  margin: 1rem auto 2rem auto;
-  padding: 1rem;
-  max-width: 80rem;
-  box-shadow: $box-shadow;
-}
-.invisible_box {
-  margin: 1rem auto 1rem auto;
-  max-width: 82rem;
-}
 
-.badge {
-  padding: 0.2em 0.3em 0.3em 0.3em;
-  margin: 0.3em;
-  color: white;
-  box-shadow: $box-shadow;
-}
+
+
+// .badge {
+//   padding: 0.2em 0.3em 0.3em 0.3em;
+//   margin: 0.3em;
+//   color: white;
+//   box-shadow: $box-shadow;
+// }
 
 .logo {
   width: 1.5rem;
@@ -98,6 +129,3 @@ footer {
   }
 }
 
-section {
-  margin: 2rem;
-}

@@ -21,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/' exact element={ <Home/> }/>
         <Route path='/blog' exact element={ <Blog/> }/>
+        <Route path='/projects' exact element={ <Blog/> }/>
         <Route path='/about' exact element={ <About/> }/>
         {Articles.map((article, key) => {
           return (

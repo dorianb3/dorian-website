@@ -13,9 +13,9 @@ function ArticlePage(props) {
                     <h1>{ article["title"] }</h1>
                     <div className='date'>{ article["date"] }</div>
                     <p>{ article["abstract"] }</p>
-                    <div className='hgroup'>
+                    <div>
                         {article["keywords"].map((keyword, index) => {
-                            return <span key={index} className={'badge fs-s bg-' + article["topic"]}>{keyword}</span>
+                            return <span key={index}>{keyword}, </span>
                         })}
                     </div>
                 </header>

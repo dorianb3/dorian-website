@@ -1,0 +1,33 @@
+{
+    "author": "dorian bonnet",
+    "date": "2022-05-20",
+    "topic": "Web Development",
+    "title": "Website Hosting with AWS",
+    "abstract": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!",
+    "keywords": [
+        "Web Development", "AWS", "Github"
+    ],
+    "content": {
+        "1. Introduction": [
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href=\"#here\">Sed similique</a>, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>"
+        ],
+        "2. AWS S3": [
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>"
+        ],
+        "3. Create Reccords in Route 53": [
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>"
+        ],
+        "4. CloudFront Distribution Setup": [
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!</p>",
+            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span id=\"here\">stock</span>. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>"
+        ]
+    }
+    
+}
+

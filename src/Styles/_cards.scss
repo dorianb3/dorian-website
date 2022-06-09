@@ -1,34 +1,76 @@
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    .card {
-        margin: 1rem;
-        padding: 1rem 0 1rem 0;
-        width: 15rem;
-        border-bottom: solid 1px grey;
-        position: relative;
-        .topic {
-            font-size: small;
-        }
-        h3 {
-            margin: 0.5rem 0 2rem 0;
-        }
-        .date {
-            position: absolute;
-            bottom: 0.5rem;
-            font-size: small;
-        }
-    }
-}
+// .cards {
+//     display: flex;
+//     flex-wrap: wrap;
+//     .card {
+//         margin: 1rem;
+//         padding: 1rem;
+//         width: 15rem;
+//         // border-bottom: solid 1px grey;
+//         position: relative;
+//         box-shadow: $box-shadow;
+//         .topic {
+//             font-size: small;
+//         }
+//         h3 {
+//             margin: 0.5rem 0 2rem 0;
+//         }
+//         .date {
+//             position: absolute;
+//             bottom: 0.5rem;
+//             font-size: small;
+//         }
+//     }
+// }
 
-.projects-cards {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .card {
-        width: 30rem;
         margin: 1rem;
         padding: 1rem;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        width: 15rem;
+        box-shadow: $box-shadow;
+        border: 1px solid transparent;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .topic {
+            font-size: small;
+        }
+        .title {
+            font-weight: bold;
+            margin: 0.5rem 0 2rem 0;
+            font-size: 1.1rem;
+        }
+        .date {
+            font-size: small;
+            position: absolute;
+            bottom: 0.5rem;
+        }
+        &:hover {
+            text-decoration: none;
+            .title {
+                color: $color1;
+            }
+            box-shadow: none;
+            border: 1px solid $color1;
+            
+        }
     }
 }
+
+
+
+
+// .projects-cards {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     .card {
+//         width: 30rem;
+//         margin: 1rem;
+//         padding: 1rem;
+//         box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+//     }
+// }
