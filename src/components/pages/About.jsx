@@ -3,25 +3,23 @@ import python_fournaise from "../img/python-de-la-forunaise.jpg";
 
 function About() {
     return (
-      <>
-        <div className="box">
-          <div className="hgroup-space-arround">
-            <div style={{"maxWidth":"30rem"}}>
-              <p>Convinced that a person's worth is not measured by who they are but by the 
-                  energy they use to improve themselves, I am passionate about learning and sharing.</p>
-              <p>Particularly interested in new technology and finance, I'm a graduate of a 
-                  research master's degree in finance, and I'm constantly learning related fields. 
-                  From data sciences to blockchain.</p>
-            </div>
-              <img 
-              className="img"
-              src={python_fournaise} 
-              style={{"width": "24rem","height": "30rem"}} 
-              alt="python de la forunaise" 
-              title="Python de la Forunaise, Ile de la Reunion, France"/>
+      <main className="about">
+
+        <section className="hgroup-space-arround">
+          <div style={{"maxWidth":"30rem"}}>
+            <p>Convinced that a person's worth is not measured by who they are but by the 
+                energy they use to improve themselves, I am passionate about learning and sharing.</p>
+            <p>Particularly interested in new technology and finance, I'm a graduate of a 
+                research master's degree in finance, and I'm constantly learning related fields. 
+                From data sciences to blockchain.</p>
           </div>
-        </div>
-        <div className="box about">
+            <img 
+            className="img"
+            src={python_fournaise} 
+            style={{"width": "24rem","height": "30rem"}} 
+            alt="python de la forunaise" 
+            title="Python de la Forunaise, Ile de la Reunion, France"/>
+        </section>
 
         <section>
             <h3>Projects</h3>
@@ -61,9 +59,6 @@ function About() {
                 <li><a href="#here">Link here</a></li>
               </ul>
             </article>
-
-
-
           </section>
           
           <section>
@@ -165,10 +160,7 @@ function About() {
             </article>
           </section>
           
-          
-          
-        </div>
-      </>
+      </main>
 
     )
   }

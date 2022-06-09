@@ -8,67 +8,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.fw-bold {
-  font-weight: bold;
-}
-
-p {
-  font-size: 0.9rem;
-}
-
-.fs-xs {
-  font-size: 0.8rem;
-}
-
-.fs-s {
-  font-size: 0.9rem;
-}
-
-.bg-elegant {
-  background-color: #2e2e2e;
-}
-
-.bg-elegant-dark {
-  background-color: #212121;
-}
-
-.bg-finance {
-  background-color: #e8f0fe;
-}
-
-.bg-finance-dark {
-  background-color: #0d47a1;
-}
-
-.bg-economics {
-  background-color: #fce8e6;
-}
-
-.bg-economics-dark {
-  background-color: #cc0000;
-}
-
-.bg-blockchain {
-  background-color: #e6f4ea;
-}
-
-.bg-blockchain-dark {
-  background-color: #00695c;
-}
-
-.bg-datascience {
-  background-color: #fef7e0;
-}
-
-.bg-datascience-dark {
-  background-color: #ff8800;
-}
-
 body {
   margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main {
+  padding-top: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section {
+  max-width: 80rem;
+  margin: 2rem auto 2rem auto;
+  padding: 4rem 1rem 4rem 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+section .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  color: #0080FF;
 }
 
 p {
@@ -78,37 +55,59 @@ p {
   line-height: 1.5em;
 }
 
-.link_container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2 {
-  font-weight: 900;
-}
-
-h2 {
-  margin-left: 1rem;
-}
-
-h3 {
-  font-weight: 700;
-}
-
 .img {
   margin: 1rem;
-  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.icon {
+  width: 2rem;
+  margin: 0 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project {
+  padding: 1rem;
+  margin: 2rem;
+  border: 2px solid #0080FF;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.project h3 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: 1rem;
+}
+
+.project p {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  margin: 1rem;
+}
+
+.project .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .wrapper * {
+  margin: 1rem;
 }
 
 .hgroup {
@@ -176,27 +175,6 @@ h3 {
           flex-direction: column;
 }
 
-.box {
-  margin: 1rem auto 2rem auto;
-  padding: 1rem;
-  max-width: 80rem;
-  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-}
-
-.invisible_box {
-  margin: 1rem auto 1rem auto;
-  max-width: 82rem;
-}
-
-.badge {
-  padding: 0.2em 0.3em 0.3em 0.3em;
-  margin: 0.3em;
-  color: white;
-  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
-}
-
 .logo {
   width: 1.5rem;
   height: 1.5rem;
@@ -220,72 +198,54 @@ footer * {
   padding: 1rem;
 }
 
-section {
-  margin: 2rem;
-}
-
-.arrow {
-  border: solid grey;
-  border-width: 0 3px 3px 0;
-  position: relative;
-  bottom: 1.5px;
-  display: inline-block;
-  padding: 3px;
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-}
-
-.tableOfContents {
-  width: 13rem;
-  max-width: 13rem;
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #262629;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
-  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
 }
 
-.tableOfContents li {
-  margin-bottom: 0.5rem;
+nav a {
+  color: white;
+  margin: 0rem 1rem 0 1rem;
+  height: 47;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 4px solid transparent;
 }
 
-.tableOfContents li a {
+nav a:hover {
   text-decoration: none;
-  color: black;
-  border-radius: 2px;
-  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-  font-size: 0.9rem;
 }
 
-.tableOfContents li a:hover {
-  font-weight: bold;
-}
-
-.tableOfContents li.active > a {
-  background-color: lightgrey;
-}
-
-@media (max-width: 768px) {
-  .tableOfContents {
-    display: none;
-  }
+nav a.active {
+  border-bottom: 4px solid #0080FF;
+  z-index: 100;
 }
 
 .article {
-  margin: 0rem 0rem 0rem 16rem;
+  max-width: 70rem;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16rem 1fr;
+      grid-template-columns: 16rem 1fr;
+}
+
+.article h2 {
+  font-size: 1.2rem;
+  margin-top: 4rem;
 }
 
 .article a {
@@ -312,6 +272,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
 .article header p {
@@ -319,13 +280,48 @@ section {
   margin: 2rem auto 2rem auto;
 }
 
-.article section {
-  padding: 1rem 2rem 1rem 2rem;
+.tableOfContents {
+  padding: 1rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 50px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.tableOfContents ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tableOfContents li {
+  margin: 1rem 0 1rem 0;
+}
+
+.tableOfContents li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.tableOfContents li a:hover {
+  font-weight: normal;
+  color: #0080FF;
+}
+
+.tableOfContents li.active > a {
+  color: #0080FF;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
+  .tableOfContents {
+    display: none;
+  }
   .article {
-    margin-left: 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -371,46 +367,52 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards .card {
   margin: 1rem;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
   width: 15rem;
-  border-bottom: solid 1px grey;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid transparent;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cards .card .topic {
   font-size: small;
 }
 
-.cards .card h3 {
-  margin: 0.5rem 0 2rem 0;
+.cards .card .title {
+  font-weight: bold;
+  margin: 0.5rem 0 3rem 0;
+  font-size: 1.1rem;
 }
 
 .cards .card .date {
+  font-size: small;
   position: absolute;
   bottom: 0.5rem;
-  font-size: small;
 }
 
-.projects-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.cards .card:hover {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #0080FF;
 }
 
-.projects-cards .card {
-  width: 30rem;
-  margin: 1rem;
-  padding: 1rem;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+.cards .card:hover .title {
+  color: #0080FF;
 }
 /*# sourceMappingURL=main.css.map */

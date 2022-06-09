@@ -6,15 +6,11 @@ import { titleToPath } from './Utils';
 
 function ArticleCard({ article }) {
   return (
-    <div className='card'>
+    <Link className='card' to={titleToPath(article["title"])}>
         <div className='topic'>{article["topic"]}</div>  
-        <div className='link_container'>
-            <Link to={titleToPath(article["title"])}>
-                <h3>{article["title"]}</h3> 
-            </Link>
-        </div>
+        <div className="title">{article["title"]}</div> 
         <div className='date'>{article["date"]}</div>
-    </div>
+    </Link>
   );
 };
 
@@ -27,28 +23,17 @@ export function ArticlesCards() {
         )}
 
 // ****************************************************************************
+// export function ProjectsCards() {
+//     return (
+//         <div className='cards'>
+//             <div className='card' style={{"width":"30rem"}} >
+//                 <div className='title'>Quantitative Investment Framework</div>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
+//             </div>
+//             <div className='card' style={{"width":"30rem"}}>
+//                 <div className='title'>Asset Pricing</div>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
+//             </div>
+//         </div>
+//         )}
 
-export function ProjectsCards() {
-    return (
-        <div className='projects-cards'>
-            <div className='card'>
-                <div className='link_container'>
-                    <Link to="#here"><h3>QIS Factory</h3></Link>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
-            </div>
-            <div className='card'>
-                <div className='link_container'>
-                    <Link to="#here"><h3>DerivatiX</h3></Link>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
-            </div>
-            <div className='card'>
-                <div className='link_container'>
-                    <Link to="#here"><h3>Finance3</h3></Link>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet magni atque nam culpa veniam aliquid impedit dolore recusandae, explicabo consectetur laborum exercitationem esse beatae eaque blanditiis. Est, nesciunt aut.</p>
-            </div>
-        </div>
-    )
-}

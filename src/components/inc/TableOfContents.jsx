@@ -99,7 +99,8 @@ const useIntersectionObserver = (setActiveId) => {
 
     const observer = new IntersectionObserver(callback, {
       // rootMargin: '-32px 0px -60% 0px',
-      rootMargin: '-32px 0px -40% 0px',
+      // rootMargin: '-32px 0px -40% 0px',
+      rootMargin: '-110px 0px -80% 0px',
     });
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
     headingElements.forEach((element) => observer.observe(element));
@@ -116,9 +117,10 @@ function TableOfContents() {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav className="tableOfContents box">
+    <div className="tableOfContents">
+      <h3>Table of Contents:</h3>
       <Headings headings={ nestedHeadings } activeId={ activeId }/>
-    </nav>
+    </div>
   )
 }
 
