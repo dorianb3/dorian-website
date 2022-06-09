@@ -5,11 +5,11 @@ import TableOfContents from '../inc/TableOfContents';
 function ArticlePage(props) {
     const article = props.article;
     return (
-        <div className='invisible_box'>
+        <main className="article">
             <TableOfContents/>
-            <div className="article">
+            <div>
 
-                <header className="box">
+                <header>
                     <h1>{ article["title"] }</h1>
                     <div className='date'>{ article["date"] }</div>
                     <p>{ article["abstract"] }</p>
@@ -20,7 +20,7 @@ function ArticlePage(props) {
                     </div>
                 </header>
 
-                <section className="box">
+                <section>
                     {Object.entries(article["content"]).map(([key, value], i) => {
                         return (
                             <div key={ key } >
@@ -32,7 +32,7 @@ function ArticlePage(props) {
                         )})}
                 </section>
             </div>
-        </div>
+        </main>
     )
 }
 

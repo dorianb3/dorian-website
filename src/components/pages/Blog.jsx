@@ -6,7 +6,11 @@ import React from 'react'
 function Blog(props) {
 
   return (
-    <div>Blog</div>
+    <main>
+      <section>
+        <h2>Work in progress...</h2>
+      </section>
+    </main>
   )
 }
 

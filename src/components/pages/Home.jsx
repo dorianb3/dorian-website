@@ -58,6 +58,8 @@ function Home() {
               <div>version</div>
               <div>codecov</div>
               <div>download</div>
+              <div>stars</div>
+              <div>fork</div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alir nihil consequuntur ut, excepturi tenetur quam nisi consectetur corporis, ratione qui molestiae? Aut repudiandae recusandae commodi laudantium!</p>
         </div>
