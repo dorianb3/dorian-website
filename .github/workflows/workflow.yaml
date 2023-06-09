@@ -18,16 +18,10 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build application
         run: npm run build
-
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: built-app
-          path: build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -37,4 +31,21 @@ jobs:
           aws-region: eu-west-3
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./build s3://www.dorianbonnet.com
+        uses: jakejarvis/s3-sync-action@v2
+        with:
+          args: --acl public-read --delete
+        env:
+          AWS_S3_BUCKET: www.dorianbonnet.com
+          AWS_REGION: eu-west-3
+          SOURCE_DIR: ./build
+          DEST_DIR: /
+
+      - name: Create CloudFront invalidation
+        uses: jcansdale/aws-cloudfront-invalidate-action@v2
+        with:
+          paths: "/*"
+        env:
+          AWS_REGION: eu-west-3
+          DISTRIBUTION_ID: E21MHL1I1IS8DD
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
