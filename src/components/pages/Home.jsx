@@ -20,9 +20,9 @@ function Home() {
           <h1>Dorian Bonnet</h1>          
           <p style={{"marginTop":"3rem"}}>I'm a finance and tech enthousiat and my mission is to constantly learn and try to 
           share the knowledge I gain. </p> 
-          <p style={{"marginBottom":"3rem"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id iure at, modi 
+          {/* <p style={{"marginBottom":"3rem"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id iure at, modi 
           delectus officia, sed exercitationem laborum doloremque vel labore, velit cupiditate dolorem 
-          dolorum itaque? Minima exercitationem voluptatibus debitis.</p>
+          dolorum itaque? Minima exercitationem voluptatibus debitis.</p> */}
         </div>
 
         <div className='vgroup'>
