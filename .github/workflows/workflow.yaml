@@ -17,9 +17,6 @@ jobs:
         with:
           node-version: 14
 
-      - name: Clear npm cache
-        run: npm cache clean --force
-
       - name: Install dependencies
         run: npm install
 
@@ -27,6 +24,7 @@ jobs:
         run: npm run build
 
       - name: Configure AWS Credentials
+        id: aws-credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -34,10 +32,17 @@ jobs:
           aws-region: eu-west-3
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./build s3://www.dorianbonnet.com --acl public-read --delete --exclude '/*' --include '*/*'
+        run: aws s3 sync ./build s3://www.dorianbonnet.com
 
+        # --acl public-read --delete --exclude '/*' --include '*/*'
       - name: Create CloudFront invalidation
         run: |
           aws cloudfront create-invalidation \
             --distribution-id E21MHL1I1IS8DD \
             --paths "/*"
+
+      - name: Set AWS credentials as environment variables
+        run: |
+          echo "AWS_ACCESS_KEY_ID=${{ steps.aws-credentials.outputs.access-key-id }}" >> $GITHUB_ENV
+          echo "AWS_SECRET_ACCESS_KEY=${{ steps.aws-credentials.outputs.secret-access-key }}" >> $GITHUB_ENV
+          echo "AWS_REGION=${{ steps.aws-credentials.outputs.region }}" >> $GITHUB_ENV
