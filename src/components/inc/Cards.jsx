@@ -1,26 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 
-import { Articles } from '../../data';
-import { titleToPath } from './Utils';
+// import { Articles } from '../../data';
+// import { titleToPath } from './Utils';
 
-function ArticleCard({ article }) {
-  return (
-    <Link className='card' to={titleToPath(article["title"])}>
-        <div className='topic'>{article["topic"]}</div>  
-        <div className="title">{article["title"]}</div> 
-        <div className='date'>{article["date"]}</div>
-    </Link>
-  );
-};
+// function ArticleCard({ article }) {
+//   return (
+//     <Link className='card' to={titleToPath(article["title"])}>
+//         <div className='topic'>{article["topic"]}</div>  
+//         <div className="title">{article["title"]}</div> 
+//         <div className='date'>{article["date"]}</div>
+//     </Link>
+//   );
+// };
 
-export function ArticlesCards() {
-    return (
-        <div className='cards'>
-        {Articles.map((article, index) => {
-            return <ArticleCard key={index} article={article}/>})}
-        </div>
-        )}
+// export function ArticlesCards() {
+//     return (
+//         <div className='cards'>
+//         {Articles.map((article, index) => {
+//             return <ArticleCard key={index} article={article}/>})}
+//         </div>
+//         )}
 
 // ****************************************************************************
 // export function ProjectsCards() {

@@ -1,11 +1,11 @@
 import React from 'react';
-import python_fournaise from "../img/python-de-la-forunaise.jpg";
+// import python_fournaise from "../img/python-de-la-forunaise.jpg";
 
-function About() {
+function Resume() {
     return (
-      <main className="about">
+      <main className="resume">
 
-        <section className="hgroup-space-arround">
+        {/* <section className="hgroup-space-arround">
           <div style={{"maxWidth":"30rem"}}>
             <p>Convinced that a person's worth is not measured by who they are but by the 
                 energy they use to improve themselves, I am passionate about learning and sharing.</p>
@@ -19,7 +19,7 @@ function About() {
             style={{"width": "24rem","height": "30rem"}} 
             alt="python de la forunaise" 
             title="Python de la Forunaise, Ile de la Reunion, France"/>
-        </section>
+        </section> */}
 
         <section>
             <h3>Projects</h3>
@@ -165,4 +165,4 @@ function About() {
     )
   }
   
-  export default About
+  export default Resume

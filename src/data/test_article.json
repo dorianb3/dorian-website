@@ -1,9 +1,9 @@
 {
     "author": "dorian bonnet",
     "date": "2022-03-01",
-    "topic": "Test",
-    "title": "Test",
-    "abstract": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!",
+    "topic": "Topic",
+    "title": "This is the title",
+    "abstract": "This is the abstract of the article. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed similique, voluptate ea illum dolorem fugit, blanditiis culpa officia, dignissimos repellendus praesentium ullam cupiditate eum ex libero quaerat dolorum! Illo, nulla!",
     "keywords": [
         "Test", "Article"
     ],
