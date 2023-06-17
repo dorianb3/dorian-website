@@ -5,22 +5,6 @@ function Resume() {
     return (
       <main className="resume">
 
-        {/* <section className="hgroup-space-arround">
-          <div style={{"maxWidth":"30rem"}}>
-            <p>Convinced that a person's worth is not measured by who they are but by the 
-                energy they use to improve themselves, I am passionate about learning and sharing.</p>
-            <p>Particularly interested in new technology and finance, I'm a graduate of a 
-                research master's degree in finance, and I'm constantly learning related fields. 
-                From data sciences to blockchain.</p>
-          </div>
-            <img 
-            className="img"
-            src={python_fournaise} 
-            style={{"width": "24rem","height": "30rem"}} 
-            alt="python de la forunaise" 
-            title="Python de la Forunaise, Ile de la Reunion, France"/>
-        </section> */}
-
         <section>
             <h3>Projects</h3>
 

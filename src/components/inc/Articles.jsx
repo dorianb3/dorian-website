@@ -26,7 +26,6 @@ const ArticleList = () => {
           });
       }, []);
 
-
       const handleTopicFilter = topic => {
         setSelectedTopic(topic);
       };
@@ -40,7 +39,6 @@ const ArticleList = () => {
     return (
         <div className='articleSection'>
             <div className='topicList'>
-                {/* <h2>Topics:</h2> */}
                 <div 
                 className={selectedTopic === '' ? 'active' : ''}
                 onClick={handleResetFilter}>Show All</div>

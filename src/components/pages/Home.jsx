@@ -8,8 +8,7 @@ import profileImg from '../img/profilphoto2.jpeg';
 // import medium from '../logo/medium.svg';
 // import arrow_right from '../icons/arrow_right.svg';
 
-// import Accordion from '../inc/Accordion';
-// import { ArticlesCards } from '../inc/Cards';
+
 import ArticleList from '../inc/Articles';
 
 
@@ -18,25 +17,19 @@ function Home() {
     <main>
 
       <div className='hero'>  
-        {/* <div className="box0"></div> */}
         <div className='box1'>
           <h2>Hello!</h2>
-          <h1>I'm Dorian Bonnet.</h1>
+          <h2>I'm Dorian Bonnet.</h2>
           <p>Passionate about many things, here you will find some of 
           my interests and works. I hope you enjoy!</p>
         </div>
-
         <div className='box2'>
-          <img src={ profileImg } className="img" alt="Dorian Bonnet" title="Dorian Bonnet" style={{"width": "14.25rem","height": "14rem"}}/>
+          <img src={ profileImg } className="img" alt="Dorian Bonnet" 
+          title="Dorian Bonnet" style={{"width": "14.25rem","height": "14rem"}}/>
         </div>
-        
-        {/* <div className="box0"></div> */}
       </div>
 
-
       <ArticleList/>
-
-
 
       {/* <section>
         <h2>Projects</h2>
