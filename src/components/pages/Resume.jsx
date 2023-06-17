@@ -66,7 +66,7 @@ function Resume() {
             <article>
               <header>
                 <div style={{"minWidth":"13rem"}}>June - December 2019</div>
-                <div><strong>Internship Quantitative Research Multi Asset</strong></div>
+                <div><strong>Quantitative Research Multi Asset Assitant</strong></div>
                 <div className="company_name">Candriam</div> 
               </header>   
               <ul>
@@ -80,7 +80,7 @@ function Resume() {
             <article>
               <header>
                 <div style={{"minWidth":"13rem"}}>September - March 2018</div>
-                <div><strong>Internship Operations and Investing</strong></div>
+                <div><strong>Operations and Investing Assistant</strong></div>
                 <div className="company_name">Montpensier Finance</div>
               </header>
               <ul>

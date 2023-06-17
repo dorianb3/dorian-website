@@ -20,8 +20,10 @@ function Home() {
       <div className='hero'>  
         {/* <div className="box0"></div> */}
         <div className='box1'>
-          <h1>Dorian Bonnet.</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cum at. Veritatis quos maxime ipsam tempore, at, facere eos, expedita quibusdam qui nam quisquam! Nesciunt incidunt enim nam ipsum temporibus!</p>
+          <h2>Hello!</h2>
+          <h1>I'm Dorian Bonnet.</h1>
+          <p>Passionate about many things, here you will find some of 
+          my interests and works. I hope you enjoy!</p>
         </div>
 
         <div className='box2'>
