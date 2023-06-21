@@ -1,7 +1,8 @@
 .articleSection {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 80rem;
     .topicList {
         // display: flex;
         // flex-direction: row;

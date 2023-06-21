@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+
 import { parseArticle, estimateReadingTime } from '../inc/Utils';
 import { TwitterShareButton } from 'react-share';
 import schedule_black_24dp from '../logo/schedule_black_24dp.svg';
 import CopyIcon from '../logo/content_copy_black_24dp.svg';
 import TwitterIcon from '../logo/twitter.svg';
+
+
 
 
 const ArticlePage = () => {
@@ -74,7 +77,7 @@ const ArticlePage = () => {
                     <img src={schedule_black_24dp} className="logo" alt="reading logo"/>
                 </div>
                 <div className="abstract">{metadata.abstract}</div>
-                <div className='article-content'>                
+                <div className="article-content">
                     <ReactMarkdown>{articleContent}</ReactMarkdown>
                 </div>
             </div>

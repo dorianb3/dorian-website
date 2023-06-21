@@ -32,10 +32,20 @@ const ArticleList = () => {
       const handleResetFilter = () => {
         setSelectedTopic('');
       };
-    
-      const filteredArticles = selectedTopic
-        ? articles.filter(article => article.metadata.topic === selectedTopic)
-        : articles;
+
+      // Get unique topics from the articles
+      const uniqueTopics = [...new Set(articles.map((article) => article.metadata.topic))];
+
+      // const filteredArticles = selectedTopic
+      //   ? articles.filter(article => article.metadata.topic === selectedTopic)
+      //   : articles;
+
+        const filteredArticles = selectedTopic
+        ? articles.filter(
+          (article) => article.metadata.topic === selectedTopic && article.metadata.status !== 'canceled'
+          )
+          : articles.filter((article) => article.metadata.status !== 'canceled');
+
     return (
         <div className='articleSection'>
             <div className='topicList'>
@@ -43,14 +53,14 @@ const ArticleList = () => {
                 className={selectedTopic === '' ? 'active' : ''}
                 onClick={handleResetFilter}>Show All</div>
                 {/* Render topic buttons */}
-                {articles.map((article, index) => (
-                    <div 
-                    className={selectedTopic === `${article.metadata.topic}` ? 'active' : ''} 
-                    key={index} 
-                    onClick={() => handleTopicFilter(`${article.metadata.topic}`)}
-                    >
-                    {'#' + article.metadata.topic}
-                    </div>
+                {uniqueTopics.map((topic, index) => (
+                  <div
+                    className={selectedTopic === topic ? 'active' : ''}
+                    key={index}
+                    onClick={() => handleTopicFilter(topic)}
+                  >
+                    {'#' + topic}
+                  </div>
                 ))}
                 
             </div>
